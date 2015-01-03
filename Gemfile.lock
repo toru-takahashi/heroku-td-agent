@@ -2,6 +2,21 @@ GEM
   remote: http://rubygems.org/
   specs:
     cool.io (1.2.4)
+    desk (1.0.5)
+      faraday (~> 0.9.0)
+      faraday_middleware (~> 0.9.0)
+      hashie (~> 2.1)
+      multi_json (~> 1.6)
+      multi_xml (~> 0.5)
+      pony (~> 1.1)
+      simple_oauth (~> 0.2.0)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    fluent-plugin-deskcom (0.0.1)
+      desk
+      fluentd
     fluent-plugin-td (0.10.18)
       fluentd (~> 0.10.27)
       td-client (~> 0.8.58)
@@ -14,11 +29,21 @@ GEM
       tzinfo (>= 1.0.0)
       tzinfo-data (>= 1.0.0)
       yajl-ruby (~> 1.0)
+    hashie (2.1.2)
     http_parser.rb (0.6.0)
     httpclient (2.4.0)
     json (1.8.1)
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.4.3)
     msgpack (0.5.9)
+    multi_json (1.10.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    pony (1.11)
+      mail (>= 2.0)
     sigdump (0.2.2)
+    simple_oauth (0.2.0)
     td-client (0.8.67)
       httpclient (~> 2.4.0)
       json (>= 1.7.6)
@@ -34,5 +59,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fluent-plugin-deskcom
   fluent-plugin-td (= 0.10.18)
   fluentd (~> 0.10.48)
