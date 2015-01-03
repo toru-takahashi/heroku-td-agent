@@ -8,6 +8,26 @@
      "TREASURE_DATA_API_KEY_OVERRIDE": {
        "description": "Override the Heroku-provided Treasure Data API key with your own",
        "required": false
+    },
+    "DESKCOM_SUBDOMAIN": {
+      "description": "Desk.com subdomain: <subdomain>.desk.com",
+      "required": true
+    },
+    "DESKCOM_CONSUMER_KEY": {
+      "description": "Desk.com CONSUMER_KEY",
+      "required": true
+    },
+    "DESKCOM_CONSUMER_SECRET_KEY": {
+      "description": "Desk.com CONSUMER_SECRET_KEY",
+      "required": true
+    },
+    "DESKCOM_OAUTH_TOKEN": {
+      "description": "Desk.com OAUTH_TOKEN",
+      "required": true
+    },
+    "DESKCOM_OAUTH_TOKEN_SECRET": {
+      "description": "Desk.com OAUTH_TOKEN_SECRET",
+      "required": true
     }
   },
   "addons": [
