@@ -59,6 +59,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-deskcom (~> 0.0.2)
+  fluent-plugin-deskcom (= 0.0.2)
   fluent-plugin-td (= 0.10.18)
   fluentd (~> 0.10.48)
