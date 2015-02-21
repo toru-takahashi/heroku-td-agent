@@ -11,7 +11,13 @@ There is no step 1. Just click on the Heroku Deploy button here.
 By default, a new Treasure Data account is created.
 If you already have an account with a [Treasure Data API key](http://docs.treasuredata.com/articles/get-apikey), fill out the "TREASURE\_DATA\_API\_KEY\_OVERRIDE" field.
 
-And, you needs "DESKCOM\_SUBDOMAIN" and "DESKCOM\_CONSUMER\_KEY" and "DESKCOM\_CONSUMER\_SECRET\_KEY" "DESKCOM\_OAUTH\_TOKEN" and "DESKCOM\_OAUTH\_TOKEN\_SECRET" 
+And, you needs the following parameters.
+
+- "DESKCOM\_SUBDOMAIN"
+- "DESKCOM\_CONSUMER\_KEY"
+- "DESKCOM\_CONSUMER\_SECRET\_KEY"
+- "DESKCOM\_OAUTH\_TOKEN"
+- "DESKCOM\_OAUTH\_TOKEN\_SECRET" 
 
 <img src="http://gyazo.com/ea06dd57a6bee2fa882c7902c26331c2.png"/></a>
 
@@ -30,7 +36,7 @@ By default, td-agent.conf is following settings.
   consumer_secret "#{ENV['DESKCOM_CONSUMER_SECRET_KEY']}"
   oauth_token "#{ENV['DESKCOM_OAUTH_TOKEN']}"
   oauth_token_secret "#{ENV['DESKCOM_OAUTH_TOKEN_SECRET']}"
-  store_file /var/log/cases.yml
+  store_file cases.yml
   output_format simple
   input_api cases
   time_column updated_at
@@ -43,7 +49,7 @@ By default, td-agent.conf is following settings.
   consumer_secret "#{ENV['DESKCOM_CONSUMER_SECRET_KEY']}"
   oauth_token "#{ENV['DESKCOM_OAUTH_TOKEN']}"
   oauth_token_secret "#{ENV['DESKCOM_OAUTH_TOKEN_SECRET']}"
-  store_file /var/log/replies.yml
+  store_file replies.yml
   output_format simple
   input_api replies
   time_column created_at
