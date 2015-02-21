@@ -14,7 +14,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
-    fluent-plugin-deskcom (0.0.2)
+    fluent-plugin-deskcom (~> 0.0.1)
       desk
       fluentd
     fluent-plugin-td (0.10.18)
@@ -59,6 +59,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-deskcom (= 0.0.2)
+  fluent-plugin-deskcom (~> 0.0.1)
   fluent-plugin-td (= 0.10.18)
   fluentd (~> 0.10.48)
